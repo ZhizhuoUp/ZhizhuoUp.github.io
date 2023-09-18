@@ -46,7 +46,19 @@
       <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
       
       <guid>https://ZhizhuoUp.github.io/portfolio/knolling_bot/</guid>
-      <description>Knolling bot</description>
+      <description>In this study, we proposed the Knolling bot, a Transformer-based approach to organizing a messy table. The results of this project have been submitted to ICRA 2024 for review.
+Knolling is the process of arranging items neatly in a flat layout. Popular applications range from tools to food and fashion.
+We draw inspiration from natural language processing (NLP) and utilize a transformer-based approach that predicts the next position of an item in a sequence of neatly positioned items.</description>
+    </item>
+    
+    <item>
+      <title>Knolling bot 2</title>
+      <link>https://ZhizhuoUp.github.io/portfolio/knolling_bot_2/</link>
+      <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
+      
+      <guid>https://ZhizhuoUp.github.io/portfolio/knolling_bot_2/</guid>
+      <description>In this study, we improved the Knolling bot in terms of manipulation, trajectory planning policies, and the strategy of grasping to make the whole system more robust.
+To be more specific, we try to make the robot arm handle some piles of objects. Considering that it&amp;rsquo;s hard for the robot arm to grasp objects from a pile, we should make the robot learn and process the features of piles, and finally unstack piles for the subsequent knolling task.</description>
     </item>
     
     <item>
@@ -113,7 +125,8 @@ images: [&amp;#34;/images/sample.jpg&amp;#34;] </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ZhizhuoUp.github.io/portfolio/robot_arm_rrt/</guid>
-      <description>This project aimed to develop a motion planning software package for a six-axis manipulator with Rapidly-Exploring Random Tree (RRT) algorithm as the core, which can theoretically be applicable to almost all six-axis robotic arms.</description>
+      <description>This project aimed to develop a motion planning software package for a six-axis manipulator with the improved Rapidly-Exploring Random Tree (RRT) algorithm as the core, which can theoretically be applicable to almost all six-axis robotic arms. The results of this project have been accepted by Sensors.
+The Strategy of Parent Point Priority Determination (PPD) Based on the regular RRT algorithm, we improved it based on the Parent Point Priority Determination (PPD), to save time in traversing the whole random tree in the process of determining the parent point.</description>
     </item>
     
     <item>
