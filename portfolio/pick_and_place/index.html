@@ -29,7 +29,7 @@
   <meta itemprop="name" content="Robotic Pick and Place Task Based on Visual Affordance Model">
 <meta itemprop="description" content="This is the description of our sample project">
 
-<meta itemprop="wordCount" content="507">
+<meta itemprop="wordCount" content="508">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -225,19 +225,19 @@
 
 <img title="Robotic Pick and Place Task Based on Visual Affordance Model" alt="Robotic Pick and Place Task Based on Visual Affordance Model" src="/portfolio/sample-project/PAP_cover.png" />
 
-<p>In this project, I implemented the pick and place tasks in an environment with multiple objects. The robot arm can recognize objects it wants to grasp in a messy environment and try to grasp them with appropriate postures. After than, the robot arm can avoid obstcales during moving and place objects inside the box.</p>
+<p>In this project, I implemented the pick and place tasks in an environment with multiple objects. The robot arm can recognize objects it wants to grasp in a messy environment and try to grasp them with appropriate postures. After that, the robot arm can avoid obstacles while moving and place objects inside the box.</p>
 <p>The whole task can be divided into several steps:</p>
 <h3 id="human-demonstration">Human Demonstration</h3>
-<p>Considering this task only include top-down grasping, where the pose of the gripper is reduced to three degrees of freedom (2D translation and 1D rotation) Therefore, the transnational degrees of freedom are naturally encoded in the 2D pixel coordinates. To encode the rotational degree of freedom, we rotate the image observation in the opposite direction of gripper
+<p>Considering this task only includes top-down grasping, where the pose of the gripper is reduced to three degrees of freedom (2D translation and 1D rotation), the transnational degrees of freedom are naturally encoded in the 2D pixel coordinates. To encode the rotational degree of freedom, we rotate the image observation in the opposite direction of the gripper
 rotation.</p>
-<p>We load images in the training dataset and label the correct rotation of every objects to be grasped in each image.</p>
+<p>We load images in the training dataset and label the correct rotation of every object to be grasped in each image.</p>
 <div align="center">
 <img src="../sample-project/PAP_label.png" style="zoom:50%" alt="aaa"/>
 </div>
 <h3 id="data-augmentation">Data Augmentation</h3>
-<p>Randomly translate and rotate each image in the dataset and add the gaussian heatmap to increase the diversity of the data in the training dataset and avoid model overfitting.</p>
+<p>Randomly translate and rotate each image in the dataset and add the Gaussian heatmap to increase the diversity of the data in the training dataset and avoid model overfitting.</p>
 <h3 id="implement-customized-u-net">Implement Customized U-Net</h3>
-<p>I choose to customize the U-Net architecture, using RGB images and corresponding ground truth postures obtained from a simulated camera. The U-Net utilizes skip connections that allow information from the contracting path to be directly propagated to the corresponding layer in the expanding path. This helps in preserving spatial information and mitigating the vanishing gradient problem.</p>
+<p>I chose to customize the U-Net architecture, using RGB images and corresponding ground truth postures obtained from a simulated camera. The U-Net utilizes skip connections that allow information from the contracting path to be directly propagated to the corresponding layer in the expanding path. This helps in preserving spatial information and mitigating the vanishing gradient problem.</p>
 <div align="center">
 <img src="../sample-project/PAP_architecture.png" style="zoom:50%" alt="aaa"/>
 </div>
@@ -245,25 +245,24 @@ rotation.</p>
 <div align="center">
 <img src="../sample-project/PAP_eval.png" style="zoom:50%" alt="aaa"/>
 </div>
-<p>As we can see in the image showed below, the model can locate the position of the target object and select the best one in the candidate rotations.</p>
-<p>Additionally, if the robot arm try to use the best cadidate rotation to grasp and fail, it can also choose another candidate based on the highest value on the map.</p>
+<p>As we can see in the image shown below, the model can locate the position of the target object and select the best one in the candidate rotations.</p>
+<p>Additionally, if the robot arm tries to use the best candidate rotation to grasp and fail, it can also choose another candidate based on the highest value on the map.</p>
 <h3 id="trajectory-planning">Trajectory Planning</h3>
-<p>To improve the ability of trajectory planning, we add the RRT algorithm to the robot arm, which means the robot can avoid obstacles during moving from one bin to another.</p>
+<p>To improve the ability of trajectory planning, we add the RRT algorithm to the robot arm, which means the robot can avoid obstacles while moving from one bin to another.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/oSiSbHtTGbg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 <h3 id="demonstration-in-pybullet">Demonstration in Pybullet</h3>
-<p>We evaluation the model in Pybullet environment, where the robot arm can gradually empty the bin filled with sundries. In 25 attempts, the robot arm removed 12 objects.</p>
+<p>We evaluate the model in a Pybullet environment, where the robot arm can gradually empty the bin filled with sundries. In 25 attempts, the robot arm removed 12 objects.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/5GL2I9WKcgk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 <h3 id="comparison-with-alternatives">Comparison with Alternatives</h3>
-<p>In the visual affordance formulation above, aligning the action with images allow us
-to effectively discretize the action space. In contrast, in this problem we explore an action regression approach, where the output is a vector and the input is the same as that in the Visual Affordance Model.</p>
+<p>In the visual affordance formulation above, aligning the action with images allows us to effectively discretize the action space. In contrast, in this problem, we explore an action regression approach, where the output is a vector and the input is the same as that in the Visual Affordance Model.</p>
 <p>To be more specific, we will use the model to predict the vector (pos_x, pos_y, rotation) for each input image with each dimension normalized to between 0 and 1.</p>
 <p>When other parameters are the same as the solution using the Visual Affordance model, the robot arm only removed 1 object in 25 attempts.</p>
 

@@ -45,7 +45,7 @@ The Strategy of Parent Point Priority Determination (PPD) Based on the regular R
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ZhizhuoUp.github.io/portfolio/evolving_soft_robot/</guid>
-      <description>This project aims to evolve a soft robot with variable morphology and select the individual with the highest speed in a customized physical simulator by using evolutionary algorithm.
+      <description>This project aims to evolve a soft robot with variable morphology and select the individual with the highest speed in a customized physical simulator by using an evolutionary algorithm.
 Develop a 3D Physics Simulator In general, the robot in a physical simulator can be defined as several masses and springs connected between each mass. Different physical parameters of each spring and each mass can affect the shape and movement of the robot.</description>
     </item>
     
@@ -55,9 +55,9 @@ Develop a 3D Physics Simulator In general, the robot in a physical simulator can
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ZhizhuoUp.github.io/portfolio/pick_and_place/</guid>
-      <description>In this project, I implemented the pick and place tasks in an environment with multiple objects. The robot arm can recognize objects it wants to grasp in a messy environment and try to grasp them with appropriate postures. After than, the robot arm can avoid obstcales during moving and place objects inside the box.
+      <description>In this project, I implemented the pick and place tasks in an environment with multiple objects. The robot arm can recognize objects it wants to grasp in a messy environment and try to grasp them with appropriate postures. After that, the robot arm can avoid obstacles while moving and place objects inside the box.
 The whole task can be divided into several steps:
-Human Demonstration Considering this task only include top-down grasping, where the pose of the gripper is reduced to three degrees of freedom (2D translation and 1D rotation) Therefore, the transnational degrees of freedom are naturally encoded in the 2D pixel coordinates.</description>
+Human Demonstration Considering this task only includes top-down grasping, where the pose of the gripper is reduced to three degrees of freedom (2D translation and 1D rotation), the transnational degrees of freedom are naturally encoded in the 2D pixel coordinates.</description>
     </item>
     
   </channel>

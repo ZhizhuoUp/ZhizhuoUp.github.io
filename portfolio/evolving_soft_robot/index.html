@@ -29,7 +29,7 @@
   <meta itemprop="name" content="Evolving Soft Robots">
 <meta itemprop="description" content="This is the description of our sample project">
 
-<meta itemprop="wordCount" content="891">
+<meta itemprop="wordCount" content="893">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -225,7 +225,7 @@
 
 <img title="Evolving Soft Robots" alt="Evolving Soft Robots" src="/portfolio/sample-project/ESR_zoo.png" />
 
-<p>This project aims to evolve a soft robot with variable morphology and select the individual with the highest speed in a customized physical simulator by using evolutionary algorithm.</p>
+<p>This project aims to evolve a soft robot with variable morphology and select the individual with the highest speed in a customized physical simulator by using an evolutionary algorithm.</p>
 <h3 id="develop-a-3d-physics-simulator">Develop a 3D Physics Simulator</h3>
 <p>In general, the robot in a physical simulator can be defined as several masses and springs connected between each mass. Different physical parameters of each spring and each mass can affect the shape and movement of the robot. To be more specific, these parameters include:</p>
 <ol>
@@ -244,15 +244,15 @@ signed a value of 0.5.</li>
 </ol>
 <p>We use Vpython to create the customzied physical simulator.</p>
 <h3 id="evolve-a-fixed-shape-robot">Evolve a Fixed-shape Robot</h3>
-<p>To test the simulated environment based on parameters defined above, we create a fixed-shape robot and let it fall to the ground. We can see the changes in robot shape during bounding.</p>
+<p>To test the simulated environment based on the parameters defined above, we create a fixed-shape robot and let it fall to the ground. We can see the changes in robot&rsquo;s shape during bounding.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/FSe1Jho6XCc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 <h3 id="evolve-the-shape">Evolve the Shape</h3>
-<p>In order to generate a robot, we regard a cube with eight vertexes as the base of the robot and generate other joints of the ’snake’. Each joint includes four new vertexes and it is located in the direction of the cube’s x-axis, y-axis or z-axis. The distances between these four points and the closest four points on the original cube are all equal to the edge of one cube.</p>
-<p>In this way, the robot can increase its body segment. As you can see in the cover of this project, the shapes of different robot are different.</p>
+<p>In order to generate a robot, we regard a cube with eight vertexes as the base of the robot and generate other joints of the ’snake’. Each joint includes four new vertexes and it is located in the direction of the cube’s x-axis, y-axis, or z-axis. The distances between these four points and the closest four points on the original cube are all equal to the edge of one cube.</p>
+<p>In this way, the robot can increase its body segment. As you can see on the cover of this project, the shapes of different robots are different.</p>
 <div align="center">
 <img src="../sample-project/ESR_body_segment.png" style="zoom:50%" alt="aaa"/>
 </div>
@@ -266,23 +266,12 @@ C \in (-\pi, \pi)
 $$</div>
 <p>𝐴, 𝐵 and 𝐶 will change while defining a new Drive Spring. Each function could become
 different or similar while evolving.</p>
-<p>I defined fitness as the distance from the center of the robot to the origin of the coordinate
-system. Here are the steps I took when I executed the Genetic Algorithm.</p>
-<p>• Initialization: I combined all parameters of the Drive Springs in one robot into one gene.
-Each gene contains <div>$$3 * num_{spring}$$</div> parameters. These are the initial population.</p>
-<p>• Tournament Selection: Every time I randomly choose two individuals in the population
-and compare their fitness. The better one of these two individuals will be selected as the part
-of parents group. Every two parents are one pair. We repeat this operation till the required
-quantity of parents is reached. (population size= 100)</p>
-<p>• Crossover: I randomly selected an index in the list of one gene as the crossover point. To
-make sure the length of the gene before Crossover is the same as that after Crossover, the
-crossover point of one pair is the same. Then, I exchanged the parameters after the crossover
-point to generate two children. Repeat the single step of crossover and eventually finish the crossover of the whole genes.</p>
-<p>• Mutation: All new offspring could have a probability of mutating. To be more specific,
-three random parameters of one gene will change a little during Mutation. (mutation rate =
-0.1)</p>
-<p>• Evaluation Limits: All the processes mentioned above will be repeated until the best fitness
-is generated or exceeds loop number limits.</p>
+<p>I defined fitness as the distance from the center of the robot to the origin of the coordinate system. Here are the steps I took when I executed the Genetic Algorithm.</p>
+<p>• Initialization: I combined all parameters of the Drive Springs in one robot into one gene. Each gene contains <div>$$3 * num_{spring}$$</div> parameters. These are the initial population.</p>
+<p>• Tournament Selection: Every time I randomly choose two individuals in the population and compare their fitness. The better one of these two individuals will be selected as the part of parents group. Every two parents are one pair. We repeat this operation till the required quantity of parents is reached. (population size= 100)</p>
+<p>• Crossover: I randomly selected an index in the list of one gene as the crossover point. To make sure the length of the gene before Crossover is the same as that after Crossover, the crossover point of one pair is the same. Then, I exchanged the parameters after the crossover point to generate two children. Repeat the single step of crossover and eventually finish the crossover of the whole genes.</p>
+<p>• Mutation: All new offspring could have a probability of mutating. To be more specific, three random parameters of one gene will change a little during Mutation. (mutation rate = 0.1)</p>
+<p>• Evaluation Limits: All the processes mentioned above will be repeated until the best fitness is generated or exceeds loop number limits.</p>
 <h3 id="performance">Performance</h3>
 <p>Assigning the moving speed as the fitness, we evaluate the simulator.</p>
 <div align="center">

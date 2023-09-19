@@ -29,7 +29,7 @@
   <meta itemprop="name" content="Apple Picking Robotics Arm Control System Based on ROS">
 <meta itemprop="description" content="This is the description of our sample project">
 
-<meta itemprop="wordCount" content="466">
+<meta itemprop="wordCount" content="469">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -228,7 +228,7 @@
 <p>This project aimed to develop a motion planning software package for a six-axis manipulator with the improved Rapidly-Exploring Random Tree (RRT) algorithm as the core, which can theoretically be applicable to almost all six-axis robotic arms. The results of this project have been accepted by <em><strong>Sensors</strong></em>.</p>
 <h3 id="the-strategy-of-parent-point-priority-determination-ppd">The Strategy of Parent Point Priority Determination (PPD)</h3>
 <p>Based on the regular RRT algorithm, we improved it based on the Parent Point Priority Determination (PPD), to save time in traversing the whole random tree in the process of determining the parent point. The core idea of this strategy is to prioritize the parent point of the next new point before sampling.</p>
-<p>Here is the process of PPD-RRT algorithm:</p>
+<p>Here is the process of the PPD-RRT algorithm:</p>
 <div align="center">
 <img src="../sample-project/RARRT_ppd.png" style="zoom:50%" alt="aaa"/>
 </div>
@@ -248,14 +248,14 @@ D_{parent} = \sqrt{(P_{parent(x)} - P_{goal(x)})^2 + (P_{parent(y)} - P_{goal(y)
 $$</div>
 <h3 id="the-strategy-of-real-time-optimization-ro">The Strategy of Real-Time Optimization (RO)</h3>
 <p>The improved algorithm based on the PPD strategy can greatly reduce the path planning time, but the number of path points still needs to be optimized. Therefore, we proposed a strategy of real-time optimization.</p>
-<p>Similarly, here is the process of PPRO-RRT algorithm:</p>
+<p>Similarly, here is the process of the PPRO-RRT algorithm:</p>
 <div align="center">
 <img src="../sample-project/RARRT_ro.png" style="zoom:50%" alt="aaa"/>
 </div>
 <p>a. Initialize the random tree 𝑃𝑖𝑛𝑖𝑡</p>
-<p>b. Set the point 𝑃𝑛𝑒𝑤 by the exploration process of PPD-RRT algorithm.</p>
-<p>c. Calculate the distance from the new point, the parent point and its two nearest ancestor points to the target point according to Equation (2), respectively.</p>
-<p>d. Determine whether the new point 𝑃𝑛𝑒𝑤 is reserved according to Inequality (3), and if it is satisfied, then it is reserved.</p>
+<p>b. Set the point 𝑃𝑛𝑒𝑤 by the exploration process of the PPD-RRT algorithm.</p>
+<p>c. Calculate the distance from the new point, the parent point, and its two nearest ancestor points to the target point according to Equation (2), respectively.</p>
+<p>d. Determine whether the new point 𝑃𝑛𝑒𝑤 is reserved according to Inequality (3) and if it is satisfied, then it is reserved.</p>
 <p>e. Repeat the above steps b–d until the target point 𝑃𝑔𝑜𝑎𝑙 is added to the random tree.</p>
 <p>The equation (2) is:</p>
 <div>$$
