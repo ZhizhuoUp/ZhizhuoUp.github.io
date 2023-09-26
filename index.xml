@@ -58,7 +58,8 @@ We draw inspiration from natural language processing (NLP) and utilize a transfo
       
       <guid>https://ZhizhuoUp.github.io/portfolio/knolling_bot_2/</guid>
       <description>In this study, we improved the Knolling bot in terms of manipulation, trajectory planning policies, and the strategy of grasping to make the whole system more robust.
-To be more specific, we try to make the robot arm handle some piles of objects. Considering that it&amp;rsquo;s hard for the robot arm to grasp objects from a pile, we should make the robot learn and process the features of piles, and finally unstack piles for the subsequent knolling task.</description>
+We can take two steps to finish this task.
+Grasp Prediction Model There is a correlation between the information of different objects in the same scenario, which determines whether a specific object can be grasped. To reveal and exploit this relationship more concretely, we choose the long short-term memory (LSTM) network, which is capable of capturing long-term dependencies in sequential data.</description>
     </item>
     
     <item>

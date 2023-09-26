@@ -8,7 +8,7 @@
   <meta name='theme-color' content='#FD3519' />
   
 
-  <meta name="generator" content="Hugo 0.118.2">
+  <meta name="generator" content="Hugo 0.119.0">
 
   
 
@@ -29,7 +29,7 @@
   <meta itemprop="name" content="Evolving Soft Robots">
 <meta itemprop="description" content="This is the description of our sample project">
 
-<meta itemprop="wordCount" content="893">
+<meta itemprop="wordCount" content="575">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -267,29 +267,16 @@ $$</div>
 <p>𝐴, 𝐵 and 𝐶 will change while defining a new Drive Spring. Each function could become
 different or similar while evolving.</p>
 <p>I defined fitness as the distance from the center of the robot to the origin of the coordinate system. Here are the steps I took when I executed the Genetic Algorithm.</p>
-<p>• Initialization: I combined all parameters of the Drive Springs in one robot into one gene. Each gene contains <div>$$3 * num_{spring}$$</div> parameters. These are the initial population.</p>
-<p>• Tournament Selection: Every time I randomly choose two individuals in the population and compare their fitness. The better one of these two individuals will be selected as the part of parents group. Every two parents are one pair. We repeat this operation till the required quantity of parents is reached. (population size= 100)</p>
-<p>• Crossover: I randomly selected an index in the list of one gene as the crossover point. To make sure the length of the gene before Crossover is the same as that after Crossover, the crossover point of one pair is the same. Then, I exchanged the parameters after the crossover point to generate two children. Repeat the single step of crossover and eventually finish the crossover of the whole genes.</p>
-<p>• Mutation: All new offspring could have a probability of mutating. To be more specific, three random parameters of one gene will change a little during Mutation. (mutation rate = 0.1)</p>
-<p>• Evaluation Limits: All the processes mentioned above will be repeated until the best fitness is generated or exceeds loop number limits.</p>
+<p>• Initialization</p>
+<p>• Tournament Selection</p>
+<p>• Crossover</p>
+<p>• Mutation</p>
+<p>• Evaluation Limits</p>
 <h3 id="performance">Performance</h3>
 <p>Assigning the moving speed as the fitness, we evaluate the simulator.</p>
 <div align="center">
 <img src="../sample-project/ESR_curve.png" style="zoom:50%" alt="aaa"/>
 </div>
-<p>Moreover, the drive spring parameters of the fastest individual are shown below:</p>
-<div>$$
-l_{spring1} = l_{1} + 0.046 * sin(-2.691 * T - 0.181)\\
-l_{spring2} = l_{2} + 0.032 * sin(6.105 * T - 0.839)\\
-l_{spring3} = l_{3} + 0.009 * sin(8.156 * T + 0.332)\\
-l_{spring4} = l_{4} + 0.036 * sin(2.668 * T + 0.561)\\
-l_{spring5} = l_{5} - 0.039 * sin(0.345 * T + 2.357)\\
-l_{spring6} = l_{6} - 0.045 * sin(-3.742 * T - 1.980)\\
-l_{spring7} = l_{7} - 0.038 * sin(-8.991 * T + 2.546)\\
-l_{spring8} = l_{8} - 0.029 * sin(8.226 * T + 2.208)\\
-l_{spring9} = l_{9} + 0.020 * sin(-3.972 * T - 2.927)\\
-l_{spring10} = l_{10} - 0.049 * sin(3.165 * T + 2.697)\\
-$$</div>
 <p>This is the test of the speed of the best robot. I assigned ℎ = 0.1𝑚 as the initial height of the robot. After deleting the fluctuated data, the max speed of the robot is 0.04702𝑚/𝑠.</p>
 <p>Here are the plot and video of the best individual.</p>
 <div align="center">

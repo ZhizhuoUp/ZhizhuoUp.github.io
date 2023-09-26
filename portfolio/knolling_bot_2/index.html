@@ -8,7 +8,7 @@
   <meta name='theme-color' content='#FD3519' />
   
 
-  <meta name="generator" content="Hugo 0.118.2">
+  <meta name="generator" content="Hugo 0.119.0">
 
   
 
@@ -29,7 +29,7 @@
   <meta itemprop="name" content="Knolling bot 2">
 <meta itemprop="description" content="This is the description of our sample project"><meta itemprop="datePublished" content="2019-05-02T19:47:09+02:00" />
 <meta itemprop="dateModified" content="2019-05-02T19:47:09+02:00" />
-<meta itemprop="wordCount" content="688">
+<meta itemprop="wordCount" content="400">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -226,11 +226,10 @@
 <img title="Knolling bot 2" alt="Knolling bot 2" src="/portfolio/sample-project/KB2_cover.png" />
 
 <p>In this study, we improved the Knolling bot in terms of manipulation, trajectory planning policies, and the strategy of grasping to make the whole system more robust.</p>
-<p>To be more specific, we try to make the robot arm handle some piles of objects. Considering that it&rsquo;s hard for the robot arm to grasp objects from a pile, we should make the robot learn and process the features of piles, and finally unstack piles for the subsequent knolling task.</p>
 <p>We can take two steps to finish this task.</p>
 <h3 id="grasp-prediction-model">Grasp Prediction Model</h3>
-<p>There is a correlation between the information of different objects in the same scenario, which determines whether a specific object can be grasped. To reveal and exploit this relationship more concretely, we choose the long short-term memory (LSTM) network, which is capable of capturing long-term dependencies in sequential data. The input of this model is the positions, rotation angles, length, width, and confidence of all objects in one scenario, while the output is the probability of grasp of each object, from 0 to 1.</p>
-<p>The threshold of this judgment is interesting. We regard the YOLOv8 model we used as the baseline, and let its output confidence be used as the threshold for judging whether to grasp. Let the threshold gradually increase from 0 to 1, we can plot the curve of YOLOv8 based on the confusion matrix.</p>
+<p>There is a correlation between the information of different objects in the same scenario, which determines whether a specific object can be grasped. To reveal and exploit this relationship more concretely, we choose the long short-term memory (LSTM) network, which is capable of capturing long-term dependencies in sequential data.</p>
+<p>The threshold of this judgment is interesting. We regard the YOLOv8 model we used as the baseline, and let its output confidence be used as the threshold for judging whether to grasp.</p>
 <div align="center">
 <img src="../sample-project/KB2_yolo_threshold.png" style="zoom:80%" alt="aaa"/>
 </div>
@@ -238,7 +237,7 @@
 <div align="center">
 <img src="../sample-project/KB2_model_threshold.png" style="zoom:80%" alt="aaa"/>
 </div>
-<p>As we can see in these two plots, the maximum accuracy of the Grasp model is 0.9254 with the best threshold being 0.5306. Correspondingly, the maximum accuracy of the YOLOv8 Model is only 0.6629 with a threshold is 0.9592. Although the YOLOv8 Model has better accuracy when the confidence threshold is close to 1 compared to other thresholds, the precision of it is relatively low. The precision in the sparse scenario is 0.4602. That shows our Grasp Model can predict the probability of grasping with high accuracy and relatively high precision.</p>
+<p>As we can see in these two plots, our Grasp Model can predict the probability of grasping with high accuracy and relatively high precision.</p>
 <p>After the comparison and analysis, we deploy the Grasp Prediction Model with the best threshold to the real-world environment. Here is the video.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -246,11 +245,10 @@
 </div>
 
 <h3 id="unstack-pile-model">Unstack Pile Model</h3>
-<p>The robot arm should learn how to unstack the pile with a relatively simple motion. Therefore, we use the self-supervised learning method to set several pretext tasks for the robot arm. To be more specific, the robotic arm can attempt to unstack the pile of objects in ray-like motion trajectories at different angles.</p>
+<p>The robot arm should learn how to unstack the pile with a relatively simple motion. Therefore, we use the self-supervised learning method to set several pretext tasks for the robot arm.</p>
 <div align="center">
 <img src="../sample-project/KB2_ray.png" style="zoom:80%" alt="aaa"/>
 </div>
-<p>As you can see in this image, the camera will automatically record and evaluate the number of objects that can be grasped after each stroke. In this way, we can collect the data of the best ray in each scenario.</p>
 <h3 id="to-be-continued">To be Continued</h3>
 <p>These are the tasks we plan to finish or the alternatives to completed tasks.</p>
 <h4 id="yolov8-instance-segmentation">YOLOv8 Instance Segmentation</h4>
@@ -260,9 +258,9 @@
 <p>In our completed tasks, the YOLOv8 Pose Estimation Model was used to predict the key points of each object. We plan to enhance Yolo’s adaptability to objects of different shapes and try to deploy YOLOv8 Instance Segmentation. The basic training has been finished. We still need to add noise to this model to make it more general.</p>
 <h4 id="reinforcement-learning-dynamic-model">Reinforcement Learning Dynamic Model</h4>
 <p>In Knolling Bot, all motion trajectory plans of the robot arm are preset. We manually set the target points in the trajectory and make the robot arm move directly to these targets along a straight line through Cartesian control.</p>
-<p>Therefore, we are training policies for the robot arm based on the SOTA Reinforcement Learning algorithm with the robotic self-supervised learning manner. In this way, the robot arm can finish a series of actions, without manually adding target points. These actions can include pick-and-place, pushing, or unstacking the object pile. We are still waiting for the result of the training.</p>
+<p>Therefore, we are training policies for the robot arm based on the SOTA Reinforcement Learning algorithm with the robotic self-supervised learning manner. We are still waiting for the result of the training.</p>
 <h4 id="semantic-model">Semantic Model</h4>
-<p>Finally, we will try to use the semantic model to make the Knolling bot recognize human commands and take specific actions, which could improve the ability of robotic arms to interact with humans. For example: “Clean up the table” means cleaning every object, and “Arrange all Batteries” means selecting batteries from the battery pile and arranging them.</p>
+<p>Finally, we will try to use the semantic model to make the Knolling bot recognize human commands and take specific actions, which could improve the ability of robotic arms to interact with humans.</p>
 
 
 

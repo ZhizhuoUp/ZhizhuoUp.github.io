@@ -8,7 +8,7 @@
   <meta name='theme-color' content='#FD3519' />
   
 
-  <meta name="generator" content="Hugo 0.118.2">
+  <meta name="generator" content="Hugo 0.119.0">
 
   
 
@@ -29,7 +29,7 @@
   <meta itemprop="name" content="Knolling bot">
 <meta itemprop="description" content="This is the description of our sample project"><meta itemprop="datePublished" content="2019-05-02T19:47:09+02:00" />
 <meta itemprop="dateModified" content="2019-05-02T19:47:09+02:00" />
-<meta itemprop="wordCount" content="513">
+<meta itemprop="wordCount" content="406">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -232,13 +232,12 @@
 </div>
 <p>We draw inspiration from natural language processing (NLP) and utilize a transformer-based approach that predicts the next position of an item in a sequence of neatly positioned items. Eventually, we integrate the knolling model with a visual perception model and a physical robot arm, to demonstrate a machine that declutters and organizes a dozen freeform items of various shapes and sizes.</p>
 <h3 id="knolling-model">Knolling Model</h3>
-<p>The input of the encoder is a list of object state information, specifically, each object’s width and length. Each list represents one unique scenario. Therefore, the input size directly corresponds to the number of objects on the table</p>
 <p>Here is the pipeline of the Knolling model.</p>
 <div align="center">
 <img src="../sample-project/KB_pipeline.png" style="zoom:80%" alt="aaa"/>
 </div>
 <h3 id="visual-perception-model">Visual Perception Model</h3>
-<p>The visual perception model is a customized YOLO v8 model, fine-tuned to predict the key points of detected objects. It ingests a single (640, 480) RGB image and outputs an (N, 4, 2) format dataset, where N represents the number of objects detected, and each object has four key points with two coordinates (x, y).</p>
+<p>The visual perception model is a customized YOLO v8 model, fine-tuned to predict the key points of detected objects.</p>
 <p>Here is the result of the Visual Perception Model in pybullet simulation environment.</p>
 <div align="center">
 <img src="../sample-project/KB_yolo_sim.png" style="zoom:80%" alt="aaa"/>
@@ -256,7 +255,7 @@
 <p>As you can see in this picture, the robot arm can correct the error of every motor automatically after each motion. The red line, which means the error of each axis after the forward kinematic calculation, can stabilize at around 0.</p>
 <h3 id="experiment">Experiment</h3>
 <p>In this section, we first perform experiments in our real-world setup. We also evaluate the performance of each component in the simulation.</p>
-<p>Here is the video of a real-world experiment.  We use a 5-DOF low-cost robot arm (WidowX 200) to complete the knolling task. An Intel Realsense D435 camera fixed on the center top of the workspace captures a picture of the object.</p>
+<p>Here is the video of a real-world experiment.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/z3Kx1TbDeGE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
