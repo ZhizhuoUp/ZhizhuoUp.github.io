@@ -29,7 +29,7 @@
   <meta itemprop="name" content="Knolling bot 2">
 <meta itemprop="description" content="This is the description of our sample project"><meta itemprop="datePublished" content="2019-05-02T19:47:09+02:00" />
 <meta itemprop="dateModified" content="2019-05-02T19:47:09+02:00" />
-<meta itemprop="wordCount" content="400">
+<meta itemprop="wordCount" content="380">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -40,7 +40,7 @@
   <div class="intro">
     <div class="logo-container">
       <a href="/">
-        <img src='https://ZhizhuoUp.github.io/images/zzz.png' alt="Profile About" class="rounded-logo">
+        <img src='https://ZhizhuoUp.github.io/images/zzz.png' alt="Profile HOME" class="rounded-logo">
       </a>
     </div>
     <h2>Zhizhuo Zhang</h2>
@@ -112,7 +112,7 @@
     <div class="intro">
       <div class="logo-container">
         <a href="/">
-          <img src='https://ZhizhuoUp.github.io/images/zzz.png' alt="Profile About" class="rounded-logo">
+          <img src='https://ZhizhuoUp.github.io/images/zzz.png' alt="Profile HOME" class="rounded-logo">
         </a>
       </div>
       <h2>Zhizhuo Zhang</h2>
@@ -231,13 +231,9 @@
 <p>There is a correlation between the information of different objects in the same scenario, which determines whether a specific object can be grasped. To reveal and exploit this relationship more concretely, we choose the long short-term memory (LSTM) network, which is capable of capturing long-term dependencies in sequential data.</p>
 <p>The threshold of this judgment is interesting. We regard the YOLOv8 model we used as the baseline, and let its output confidence be used as the threshold for judging whether to grasp.</p>
 <div align="center">
-<img src="../sample-project/KB2_yolo_threshold.png" style="zoom:80%" alt="aaa"/>
-</div>
-<p>Similarly, we can also plot the curve of our Grasp Prediction Model.</p>
-<div align="center">
 <img src="../sample-project/KB2_model_threshold.png" style="zoom:80%" alt="aaa"/>
 </div>
-<p>As we can see in these two plots, our Grasp Model can predict the probability of grasping with high accuracy and relatively high precision.</p>
+<p>Our Grasp Model can predict the probability of grasping with high accuracy and relatively high precision.</p>
 <p>After the comparison and analysis, we deploy the Grasp Prediction Model with the best threshold to the real-world environment. Here is the video.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
