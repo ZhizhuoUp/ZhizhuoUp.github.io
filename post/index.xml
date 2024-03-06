@@ -28,12 +28,7 @@
       <link>https://ZhizhuoUp.github.io/post/portfolio-definition/</link>
       <pubDate>Thu, 02 May 2019 19:49:05 +0200</pubDate>
       <guid>https://ZhizhuoUp.github.io/post/portfolio-definition/</guid>
-      <description>&lt;p&gt;Here are some details about the portfolio settings.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://ZhizhuoUp.github.io/post/images/portfolio-example.png&#34;
-         alt=&#34;Example of Portfolio page&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;Example of Portfolio page&lt;/p&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;</description>
+      <description>&lt;p&gt;Here are some details about the portfolio settings.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ZhizhuoUp.github.io/post/images/portfolio-example.png&#34;&#xA;         alt=&#34;Example of Portfolio page&#34;/&gt;&lt;figcaption&gt;&#xA;            &lt;p&gt;Example of Portfolio page&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
     </item>
     <item>
       <title>Archetypes management</title>
@@ -47,8 +42,7 @@
       <link>https://ZhizhuoUp.github.io/post/manage-your-menu/</link>
       <pubDate>Thu, 02 May 2019 19:06:29 +0200</pubDate>
       <guid>https://ZhizhuoUp.github.io/post/manage-your-menu/</guid>
-      <description>&lt;p&gt;Menu in the sidebar can be defined within the &lt;code&gt;config.toml&lt;/code&gt; or directly in the files.
-I prefer the config file approach, as this menu is pretty simple.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Menu in the sidebar can be defined within the &lt;code&gt;config.toml&lt;/code&gt; or directly in the files.&#xA;I prefer the config file approach, as this menu is pretty simple.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shortcodes</title>
@@ -62,8 +56,7 @@ I prefer the config file approach, as this menu is pretty simple.&lt;/p&gt;</des
       <link>https://ZhizhuoUp.github.io/post/config-file/</link>
       <pubDate>Sat, 20 Apr 2019 16:18:12 +0100</pubDate>
       <guid>https://ZhizhuoUp.github.io/post/config-file/</guid>
-      <description>&lt;p&gt;Here is the basic config file used for personal-web.&lt;/p&gt;
-&lt;p&gt;You can use it as a base for your website.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Here is the basic config file used for personal-web.&lt;/p&gt;&#xA;&lt;p&gt;You can use it as a base for your website.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pages</title>
@@ -77,9 +70,7 @@ I prefer the config file approach, as this menu is pretty simple.&lt;/p&gt;</des
       <link>https://ZhizhuoUp.github.io/post/define-specific-og-image/</link>
       <pubDate>Sat, 20 Apr 2019 11:14:59 +0200</pubDate>
       <guid>https://ZhizhuoUp.github.io/post/define-specific-og-image/</guid>
-      <description>Within any page, you can add in the FrontMatter a images array that will be used to define a specific Open Graph image.
-For example, see content/_index.md page:
-images: [&amp;#34;/images/sample.jpg&amp;#34;] </description>
+      <description>Within any page, you can add in the FrontMatter a images array that will be used to define a specific Open Graph image.&#xA;For example, see content/_index.md page:&#xA;images: [&amp;#34;/images/sample.jpg&amp;#34;] </description>
     </item>
   </channel>
 </rss>
