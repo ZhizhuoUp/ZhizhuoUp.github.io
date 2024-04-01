@@ -28,14 +28,14 @@
       <link>https://ZhizhuoUp.github.io/post/portfolio-definition/</link>
       <pubDate>Thu, 02 May 2019 19:49:05 +0200</pubDate>
       <guid>https://ZhizhuoUp.github.io/post/portfolio-definition/</guid>
-      <description>&lt;p&gt;Here are some details about the portfolio settings.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ZhizhuoUp.github.io/post/images/portfolio-example.png&#34;&#xA;         alt=&#34;Example of Portfolio page&#34;/&gt;&lt;figcaption&gt;&#xA;            &lt;p&gt;Example of Portfolio page&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+      <description>&lt;p&gt;Here are some details about the portfolio settings.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ZhizhuoUp.github.io/post/images/portfolio-example.png&#34;&#xA;    alt=&#34;Example of Portfolio page&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Example of Portfolio page&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
     </item>
     <item>
       <title>Knolling bot</title>
       <link>https://ZhizhuoUp.github.io/portfolio/knolling_bot/</link>
       <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
       <guid>https://ZhizhuoUp.github.io/portfolio/knolling_bot/</guid>
-      <description>In this study, we proposed the Knolling bot, a Transformer-based approach to organizing a messy table. The results of this project have been submitted to ICRA 2024 for review.&#xA;Knolling is the process of arranging items neatly in a flat layout. Popular applications range from tools to food and fashion.&#xA;We draw inspiration from natural language processing (NLP) and utilize a transformer-based approach that predicts the next position of an item in a sequence of neatly positioned items.</description>
+      <description>In this study, we proposed the Knolling bot, a Transformer-based approach to organizing a messy table. The results of this project have been submitted to IROS 2024 for review.&#xA;Knolling is the process of arranging items neatly in a flat layout. Popular applications range from tools to food and fashion.&#xA;We draw inspiration from natural language processing (NLP) and utilize a transformer-based approach that predicts the next position of an item in a sequence of neatly positioned items.</description>
     </item>
     <item>
       <title>Knolling bot 2</title>
