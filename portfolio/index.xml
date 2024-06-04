@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PORTFOLIO on Zhizhuo Zhang</title>
-    <link>http://localhost:39303/portfolio/</link>
+    <link>https://ZhizhuoUp.github.io/portfolio/</link>
     <description>Recent content in PORTFOLIO on Zhizhuo Zhang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Zhizhuo Zhang</copyright>
     <lastBuildDate>Thu, 02 May 2019 19:47:09 +0200</lastBuildDate>
-    <atom:link href="http://localhost:39303/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ZhizhuoUp.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Knolling bot</title>
-      <link>http://localhost:39303/portfolio/knolling_bot/</link>
+      <link>https://ZhizhuoUp.github.io/portfolio/knolling_bot/</link>
       <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
-      <guid>http://localhost:39303/portfolio/knolling_bot/</guid>
+      <guid>https://ZhizhuoUp.github.io/portfolio/knolling_bot/</guid>
       <description>In this study, we proposed the Knolling bot, a Transformer-based approach to organizing a messy table. The results of this project have been submitted to IROS 2024 for review.&#xA;Knolling is the process of arranging items neatly in a flat layout. Popular applications range from tools to food and fashion.&#xA;We draw inspiration from natural language processing (NLP) and utilize a transformer-based approach that predicts the next position of an item in a sequence of neatly positioned items.</description>
     </item>
     <item>
       <title>Knolling bot 2</title>
-      <link>http://localhost:39303/portfolio/knolling_bot_2/</link>
+      <link>https://ZhizhuoUp.github.io/portfolio/knolling_bot_2/</link>
       <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
-      <guid>http://localhost:39303/portfolio/knolling_bot_2/</guid>
+      <guid>https://ZhizhuoUp.github.io/portfolio/knolling_bot_2/</guid>
       <description>In this study, we improved the Knolling bot in terms of manipulation, trajectory planning policies, and the strategy of grasping to make the whole system more robust. The result of this project have been accepted by NeurIPS2023 Workshop. (View the article)&#xA;We can take two steps to finish this task.&#xA;Grasp Prediction Model There is a correlation between the information of different objects in the same scenario, which determines whether a specific object can be grasped.</description>
     </item>
     <item>
       <title>Apple Picking Robotics Arm Control System Based on ROS</title>
-      <link>http://localhost:39303/portfolio/robot_arm_rrt/</link>
+      <link>https://ZhizhuoUp.github.io/portfolio/robot_arm_rrt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39303/portfolio/robot_arm_rrt/</guid>
+      <guid>https://ZhizhuoUp.github.io/portfolio/robot_arm_rrt/</guid>
       <description>This project aimed to develop a motion planning software package for a six-axis manipulator with the improved Rapidly-Exploring Random Tree (RRT) algorithm as the core, which can theoretically be applicable to almost all six-axis robotic arms. The results of this project have been accepted by Sensors.&#xA;The Strategy of Parent Point Priority Determination (PPD) Based on the regular RRT algorithm, we improved it based on the Parent Point Priority Determination (PPD), to save time in traversing the whole random tree in the process of determining the parent point.</description>
     </item>
     <item>
       <title>Evolving Soft Robots</title>
-      <link>http://localhost:39303/portfolio/evolving_soft_robot/</link>
+      <link>https://ZhizhuoUp.github.io/portfolio/evolving_soft_robot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39303/portfolio/evolving_soft_robot/</guid>
+      <guid>https://ZhizhuoUp.github.io/portfolio/evolving_soft_robot/</guid>
       <description>This project aims to evolve a soft robot with variable morphology and select the individual with the highest speed in a customized physical simulator by using an evolutionary algorithm.&#xA;Develop a 3D Physics Simulator In general, the robot in a physical simulator can be defined as several masses and springs connected between each mass. Different physical parameters of each spring and each mass can affect the shape and movement of the robot.</description>
     </item>
     <item>
       <title>Robotic Pick and Place Task Based on Visual Affordance Model</title>
-      <link>http://localhost:39303/portfolio/pick_and_place/</link>
+      <link>https://ZhizhuoUp.github.io/portfolio/pick_and_place/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39303/portfolio/pick_and_place/</guid>
+      <guid>https://ZhizhuoUp.github.io/portfolio/pick_and_place/</guid>
       <description>In this project, I implemented the pick and place tasks in an environment with multiple objects. The robot arm can recognize objects it wants to grasp in a messy environment and try to grasp them with appropriate postures. After that, the robot arm can avoid obstacles while moving and place objects inside the box.&#xA;The whole task can be divided into several steps:&#xA;Human Demonstration Considering this task only includes top-down grasping, where the pose of the gripper is reduced to three degrees of freedom (2D translation and 1D rotation), the transnational degrees of freedom are naturally encoded in the 2D pixel coordinates.</description>
     </item>
     <item>
       <title>Skills in robot dynamics &amp; control</title>
-      <link>http://localhost:39303/portfolio/dynamics_control/</link>
+      <link>https://ZhizhuoUp.github.io/portfolio/dynamics_control/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39303/portfolio/dynamics_control/</guid>
+      <guid>https://ZhizhuoUp.github.io/portfolio/dynamics_control/</guid>
       <description>Here are several basic skills about robotics I have shown in multiple ways, including course projects, competitions, and assignments.&#xA;Extended Kalman Filter I implemented an Extended Kalman Filter to estimate the state of a mobile robot. The state consists of the robot&amp;rsquo;s 2D position and orientation (x,y,theta). The command to the robot consists of a forward translational velocity vel_tran and a rotational velocity vel_ang. The dynamic model of the robot thus is as follows:</description>
     </item>
   </channel>
