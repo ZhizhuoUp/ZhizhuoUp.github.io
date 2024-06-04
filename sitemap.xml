@@ -2,97 +2,101 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ZhizhuoUp.github.io/post/my_post/</loc>
+    <loc>http://localhost:39303/post/my_post/</loc>
     <lastmod>2023-09-09T20:32:06-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/</loc>
+    <loc>http://localhost:39303/</loc>
     <lastmod>2023-09-09T20:32:06-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/post/</loc>
+    <loc>http://localhost:39303/post/</loc>
     <lastmod>2023-09-09T20:32:06-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/post/getting-started/</loc>
+    <loc>http://localhost:39303/post/getting-started/</loc>
     <lastmod>2019-05-03T09:37:55+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/post/portfolio-definition/</loc>
+    <loc>http://localhost:39303/post/portfolio-definition/</loc>
     <lastmod>2019-05-02T19:49:05+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/portfolio/knolling_bot/</loc>
+    <loc>http://localhost:39303/portfolio/knolling_bot/</loc>
     <lastmod>2019-05-02T19:47:09+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/portfolio/knolling_bot_2/</loc>
+    <loc>http://localhost:39303/portfolio/knolling_bot_2/</loc>
     <lastmod>2019-05-02T19:47:09+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/portfolio/</loc>
+    <loc>http://localhost:39303/portfolio/</loc>
     <lastmod>2019-05-02T19:47:09+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/post/archetypes/</loc>
+    <loc>http://localhost:39303/post/archetypes/</loc>
     <lastmod>2019-05-02T19:25:30+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/post/manage-your-menu/</loc>
+    <loc>http://localhost:39303/post/manage-your-menu/</loc>
     <lastmod>2019-05-02T19:06:29+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/post/shortcodes/</loc>
+    <loc>http://localhost:39303/post/shortcodes/</loc>
     <lastmod>2019-04-29T16:18:12+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/post/config-file/</loc>
+    <loc>http://localhost:39303/post/config-file/</loc>
     <lastmod>2019-04-20T16:18:12+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/post/pages/</loc>
+    <loc>http://localhost:39303/post/pages/</loc>
     <lastmod>2019-04-20T16:18:12+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/post/define-specific-og-image/</loc>
+    <loc>http://localhost:39303/post/define-specific-og-image/</loc>
     <lastmod>2019-04-20T11:14:59+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/about/</loc>
+    <loc>http://localhost:39303/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/portfolio/robot_arm_rrt/</loc>
+    <loc>http://localhost:39303/portfolio/robot_arm_rrt/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/designs/</loc>
+    <loc>http://localhost:39303/designs/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/portfolio/evolving_soft_robot/</loc>
+    <loc>http://localhost:39303/portfolio/evolving_soft_robot/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/portfolio/pick_and_place/</loc>
+    <loc>http://localhost:39303/portfolio/pick_and_place/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ZhizhuoUp.github.io/techs/</loc>
+    <loc>http://localhost:39303/portfolio/dynamics_control/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:39303/techs/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
